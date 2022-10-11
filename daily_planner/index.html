@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- fontawesome-icon-links -->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- google-fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Work+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+    <title>Daily Planner</title>
+</head>
+<body>
+    <!-- main -->
+    <!-- main -->
+    <div id="main">
+        <div class="main-container">
+            <!-- navigation -->
+            <nav id="navbar">
+                <div class="nav-container">
+                    <!-- search-input -->
+                    <div class="filter-section">
+                        <input type="search" name="filter" id="filter" placeholder="Search">
+                    </div>
+                    <!-- logo -->
+                    <div class="logo">
+                        <h3>dailer</h3>
+                    </div>
+                    <!-- menu -->
+                    <div class="menu-section">
+                        <div class="menu-add">
+                            <i class="fa-solid fa-plus" title="Add Task"></i>
+                        </div>
+                        <div class="profile-picture">
+                            <img src="/daily_planner/av3.JPG" alt="profile-picture">
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- show -->
+            <div id="show">
+                <div class="show-container">
+                    <!-- heading -->
+                    <div class="heading">
+                        <h2>Today</h2>
+                        <small class="date"></small>
+                    </div>
+                    <!-- task-area -->
+                    <div id="showcase"></div>
+                    <!-- <div id="task-area">
+                        <div class="task-area-container">
+                            <div id="priority-section" class="pri">
+                                <i class="fa-regular fa-circle"></i>
+                            </div>
+                            <div id="task-details">
+                                <h3 class="task">go to the gym</h3>
+                                <p class="description">cardio workouts</p>
+                                <p class="time">3:00 PM</p>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- add-task-icon -->
+                    <div id="add-task-icon">
+                        <i class="fa-solid fa-plus" title="Add Task"></i>
+                        <p>Add Task</p>
+                    </div>
+                    <!-- add-task-input-form -->
+                    <div id="task-form-area">
+                        <div class="form-area-container">
+                            <form method="" action=""class="form">
+                                <div class="round">
+                                    <div class="form-area">
+                                        <input type="text" name="task" class="task-name" placeholder="Task name">
+                                    </div>
+                                    <div class="form-area">
+                                        <input type="text" name="description" class="description-name" placeholder="Description">
+                                    </div>
+                                    <br>
+                                    <div class="form-area selection">
+                                        <input type="time" name="time" class="time-name">
+                                        <select name="select" class="select">
+                                            <option value="" selected disabled hidden>Priority?</option>
+                                            <option value="1">Priority 1</option>
+                                            <option value="2">Priority 2</option>
+                                            <option value="3">Priority 3</option>
+                                            <option value="4">Priority 4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="not-round">
+                                    <div class="form-area">
+                                        <button class="btn btn-light cancel">Cancel</button>
+                                        <button name="submit" class="btn add-task" disabled>Add Task</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

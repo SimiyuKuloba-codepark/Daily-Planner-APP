@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- fontawesome-icon-links -->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Task List</title>
+</head>
+<body>
+    <div id="main">
+        <div class="main-container">
+            <!-- input -->
+            <div id="input">
+                <div class="input-container">
+                    <!-- heading -->
+                    <div class="task-heading">
+                        <h1>Task List</h1>
+                    </div>
+                    <!-- form-input -->
+                    <div class="form-box">
+                        <form action="" id="form-input">
+                            <div class="form-section">
+                                <label for="name">New Task</label>
+                            </div>
+                            <small class="small"></small>
+                            <div class="form-section">
+                                <input type="text" name="name" class="name">
+                            </div>
+                            <div class="form-section">
+                                <button class="btn">ADD TASK</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <!-- output -->
+            <div id="output">
+                <div class="output-container">
+                    <!-- heading -->
+                    <div class="output-heading">
+                        <h1>Tasks</h1>
+                    </div>
+                    <!-- form-output -->
+                    <form action="" id="form-output">
+                        <div class="form-section">
+                            <label for="filer">Filter Taks</label>
+                        </div>
+                        <div class="form-section">
+                            <input type="text" name="filter" class="filter">
+                            <input type="time" name="" id="">
+                        </div>
+                        <br>
+                        <ul class="collection">
+                            <!-- <li class="collection-items">Finish Essay<a href="" class="delete-item"><i class="fa-solid fa-xmark"></i></a></li>
+                            <li class="collection-items">Clean Car<a href="" class="delete-item"><i class="fa-solid fa-xmark"></i></a></li> -->
+                        </ul>
+                        <br>
+                        <a href="#" class="btn btn-dark clear-task">CLEAR TASKS</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,322 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* UTILITIES*/
+/* colors & font type*/
+:root{
+    --primary-color: #e0247c;
+    --secondary-color: #b61c71;
+    --light-primary: #f5a3c9;
+    --primary-font:'Work Sans', sans-serif;;
+    --danger-color: rgb(245, 84, 84);
+    --success-color: #28a745;
+}
+
+/* OVERAL DISPLAY */
+html, body{
+    font-family: var(--primary-font);
+}
+
+/* ELEMENTS */
+/* anchor links */
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* lists */
+ul{
+    list-style: none;
+}
+/* headings */
+
+/* paragraphs */
+
+/* ALERTS*/
+.alert{
+    font-size: .7rem;
+    padding: .3rem .5rem;
+    color: #fff;
+    text-align: center;
+    background: var(--danger-color);
+}
+
+/* priority-colors */
+.priority-1{ color: red;}
+.priority-2{ color: blue;}
+.priority-3{ color: green;}
+.priority-4{ color: #fff;}
+
+.danger{ background: var(--danger-color); }
+
+.success{ background: var(--success-color); }
+
+
+/* LAYOUT STRUCTURE */
+/* padding y-axis */
+.py-1{padding: 10px 0;}
+.py-2{padding: 20px 0;}
+.py-3{padding: 30px 0;}
+
+
+/* TEXT */
+.text-primary{
+    color: var(--primary-color);
+}
+
+
+/* BUTTONS */
+/* basic button */
+.btn{
+    display: inline-block;
+    font-size: .8rem;
+    color: #fff ;
+    background: var(--light-primary);
+    padding: .5rem 1rem;
+    border: none;
+    font-family: var(--primary-font);
+    border-radius: .2rem;
+}
+
+.btn:hover{
+    background: var(--light-primary);
+}
+
+.btn-light{
+    background: rgb(214, 213, 213);
+    color: #000;
+}
+
+.btn-light:hover{
+    background: rgb(201, 199, 199);
+    cursor: pointer;
+}
+
+/*main*/
+/*main*/
+/* navigation */
+#main .main-container #navbar{
+    background: var(--primary-color);
+    height: 8vh;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#main .main-container #navbar .nav-container{
+    padding: .5rem 2rem;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* search-input */
+/* #main .main-container #navbar .nav-container .filter-section{
+    margin-left: 5rem;
+} */
+
+#main .main-container #navbar .nav-container .filter-section input{
+    border: none;
+    padding: .5rem;
+    width: 150%;
+    background: var(--secondary-color);
+    color: #fff;
+    font-family: var(--primary-font);
+}
+
+#main .main-container #navbar .nav-container .filter-section input:hover{
+    background: rgb(255, 255, 255);
+}
+
+#main .main-container #navbar .nav-container .filter-section input::placeholder{
+    font-family: var(--primary-font);
+    color: rgb(233, 232, 232);
+    font-weight: bold;
+}
+
+#main .main-container #navbar .nav-container .filter-section input:focus{
+    width: 200%;
+    border: none;
+    background: #fff;
+    color: #000;
+    outline: none;
+}
+
+/* logo */
+#main .main-container #navbar .nav-container .logo h3{
+    color: #fff;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 3rem;
+}
+
+/* menu */
+#main .main-container #navbar .nav-container .menu-section{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+#main .main-container #navbar .nav-container .menu-section div:first-child{
+    margin-right: 1rem;
+}
+
+#main .main-container #navbar .nav-container .menu-section .menu-add i{
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+#main .main-container #navbar .nav-container .menu-section .menu-add i:hover{
+    cursor: pointer;
+}
+
+#main .main-container #navbar .nav-container .menu-section .profile-picture img{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}
+
+/* show */
+/* show */
+#show .show-container{
+    /* background: #999; */
+    width: 60%;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+/* heading */
+#show .show-container .heading{
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+}
+
+#show .show-container .heading h2{
+    margin-right: .3rem;
+}
+
+/* task-area */
+#show .show-container #task-area{
+    /* background: rgb(128, 127, 127); */
+    padding: 1rem;
+    border-bottom: 1px solid rgb(182, 181, 181);
+}
+
+#show .show-container #task-area .task-area-container{
+    display: flex;
+}
+
+/* priority-section */
+#show .show-container #task-area .task-area-container #priority-section{
+    margin-right: 1rem;
+}
+
+#show .show-container #task-area .task-area-container #priority-section i:hover{
+    color: var(--danger-color);
+    cursor: pointer;
+}
+
+/* task-details */
+#show .show-container #task-area .task-area-container #task-details .task{
+    color: #333;
+}
+#show .show-container #task-area .task-area-container #task-details .description{
+    color: #777;
+}
+#show .show-container #task-area .task-area-container #task-details .time{
+    color: var(--danger-color);
+}
+
+/* add-task-icon */
+#add-task-icon{
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#add-task-icon i{
+    margin-right: 1rem;
+    color: var(--primary-color);
+}
+
+/* add-task-input-form */
+#task-form-area{
+    margin-top: .5rem;
+    display: none;
+}
+
+#task-form-area .form-area-container form .round{
+    border: 1px solid rgb(192, 190, 190);
+    border-radius: .5rem;
+    padding: .5rem;
+    margin-bottom: .5rem;
+}
+
+#task-form-area .form-area-container form .round .form-area input{
+    border: none;
+    padding: .5rem;
+    font-family: var(--primary-font);
+}
+
+#task-form-area .form-area-container form .round .form-area input:focus{
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#task-form-area .form-area-container form .round .form-area input::placeholder{
+    font-family: var(--primary-font);
+}
+
+#task-form-area .form-area-container form .round .form-area .task{
+    font-weight: bold;
+}
+
+#task-form-area .form-area-container form .round .form-area .task::placeholder{
+    font-weight: bold;
+}
+
+#task-form-area .form-area-container form .round .selection{
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+}
+
+#task-form-area .form-area-container form .round .form-area .time{
+    border: 1px solid rgb(182, 181, 181);
+    border-radius: .5rem;
+    padding: .3rem .7rem;
+}
+
+#task-form-area .form-area-container form .round .form-area .time:focus{
+    border: 1px solid rgb(182, 181, 181);
+    background: #999;
+}
+
+#task-form-area .form-area-container form .round .form-area select{
+    border: 1px solid rgb(182, 181, 181);
+    border-radius: .5rem;
+    font-family: var(--primary-font);
+}
+
+#task-form-area .form-area-container form .round .form-area select:focus{
+    border: 1px solid rgb(182, 181, 181);
+}
+
+#task-form-area .form-area-container form .not-round .form-area{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 3rem;
+}
+
+#task-form-area .form-area-container form .not-round .form-area button{
+    margin-right: .5rem;
+}
+
