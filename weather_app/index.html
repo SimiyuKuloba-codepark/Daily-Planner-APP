@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Weather App</title>
+</head>
+<body>
+  <h1>My Weather App</h1>
+  <div id="weather-box">
+    <div class="container">
+      <div class="location">
+        <h1 style="color: #fff;" class="eneo"></h1>
+        <p class="gr"></p>
+      </div>
+      <div class="description">
+        <h2 class="elezo"></h2>
+      </div>
+      <div class="temperature">
+          <h2 style="color: #fff;" class="joto"></h2>
+      </div>
+      <div class="icon">
+        <i class="alama"></i>
+      </div>
+      <div id="results">
+        <ul>
+          <li class="humidity"></li>
+          <li class="pressure"></li>
+          <li class="feels-like"></li>
+          <li class="wind"></li>
+        </ul>
+      </div>
+      <div id="data-btn">
+        <div class="btn data-btn">Change Location</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- location-input-box -->
+  <div id="location-input-box">
+    <div class="location-container">
+      <div class="nav">
+        <h3>Location</h3>
+        <h2 onclick="closeBox()" class="closeX">x</h2>
+      </div>
+
+      <div id="form">
+        <form class="form">
+          <div class="input-section city-section">
+            <small class="red-alert">Fill in the location first!</small>
+            <label for="place">Eneo</label>
+            <input type="text" name="place" class="place">
+          </div>
+          <div class="btn-section">
+            <div onclick="closeBox()" class="btn close">Close</div>
+            <div class="btn save">Save</div>
+          </div>
+          <!-- loader -->
+          <div id="load">
+            <div class="loading">
+              <img src="loading.gif" alt="">
+            </div>  
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <p>&copy 2023. A product of <a href="https://simiyukuloba-codepark.github.io/cp-port/">Codepark</a></p>
+
+<script src="weather.js"></script>  
+<script src="ui.js"></script>  
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+/* RESET */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* UTILITIES*/
+/* colors & font type*/
+:root{
+  --primary-color: #e0247c;
+  --secondary-color: #b61c71;
+  --light-primary: #f5a3c9;
+  --primary-font:'Work Sans', sans-serif;;
+  --danger-color: rgb(245, 84, 84);
+  --success-color: #28a745;
+  --grey-color: grey;
+  --blue-color: rgb(13, 101, 233);
+  --blue-light: rgb(11, 226, 241);
+  --green-color: rgb(4, 82, 39);
+  --navy-color: rgb(6, 114, 133);
+}
+
+/* ELEMENTS */
+/* anchor links */
+a{
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+/* lists */
+ul{
+  list-style: none;
+}
+
+.alert{
+  font-size: .7rem;
+  padding: .3rem .5rem;
+  color: #fff;
+  text-align: center;
+  background: var(--danger-color);
+  margin: 1rem;
+}
+
+.red-alert{
+  color: var(--danger-color);
+  display: none;
+}
+
+
+.danger{ background: var(--danger-color); }
+
+.success{ background: var(--success-color); }
+
+.btn{
+  display: block;
+  font-size: .8rem;
+  color: #fff ;
+  background: rgb(5, 46, 107);
+  padding: .5rem 1rem;
+  border: none;
+  font-family: var(--primary-font);
+  border-radius: .5rem;
+  text-align: center;
+}
+
+.btn:hover{
+  background: rgb(1, 29, 71);
+  cursor: pointer;
+}
+
+.closeX:hover{
+  cursor: pointer;
+}
+
+/* weather-box */
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+#weather-box{
+  background: var(--blue-color);
+  padding:5rem 2rem 1rem 2rem;
+  margin: 2rem 0rem;
+}
+
+#weather-box .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#weather-box .container .location{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+#weather-box .container #results{
+  background: #fff;
+  color: rgb(94, 93, 93);
+  margin: 1rem 0rem;
+  border-radius: .2rem;
+}
+
+#weather-box .container #results ul{
+  text-align: center;
+}
+
+#weather-box .container #results ul li{
+  font-weight: bold;
+  padding: 1rem 5rem;
+  border-bottom: 1px solid rgb(94, 93, 93);
+}
+
+#weather-box .container #results ul li:last-child{
+  border-bottom: none;
+}
+
+/* loader */
+#load{
+  display: none;
+  margin: 1rem;
+}
+
+.loading{
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+  
+.loading img{
+  width: 4rem;
+}
+
+/* location-input-box */
+#location-input-box{
+  display: none;
+  /* offsetX / offsetY / blurRadius / spreadRadius / color */
+  box-shadow: 5px 5px 15px 2px rgba(0, 128, 128, 0.377);
+  margin-bottom: 3rem;
+  position: absolute;
+  background: #fff;
+}
+
+#location-input-box .location-container .nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem;
+}
+
+#location-input-box .location-container .nav h3{
+  color: var(--blue-color);
+}
+
+#location-input-box .location-container #form .input-section{
+  padding: .5rem;
+}
+
+#location-input-box .location-container #form .input-section label{
+  color: rgb(94, 93, 93);
+  font-weight: bold;
+  padding-bottom: .3rem;
+}
+
+#location-input-box .location-container #form .input-section input{
+  padding: .5rem;
+  width: 20rem;
+  border: 1px solid rgb(94, 93, 93);
+  outline: none;
+}
+
+#location-input-box .location-container #form .input-section input:focus{
+  border: 1px solid  var(--blue-color);
+}
+
+#location-input-box .location-container #form .city-section{
+  border-top: 1px solid rgb(94, 93, 93);
+}
+
+#location-input-box .location-container #form .state-section{
+  border-bottom: 1px solid rgb(94, 93, 93);
+  padding-bottom: 1rem;
+}
+
+#location-input-box .location-container #form form .input-section{
+  display: flex;
+  flex-direction: column;
+}
+
+#location-input-box .location-container #form .btn-section{
+  margin: .5rem;
+  display: flex;
+  justify-content: flex-end;
+  padding: .5rem 0rem;
+}
+
+#location-input-box .location-container #form .btn-section .close{
+  background: rgb(172, 170, 170);
+  color: #000;
+  margin-right: .5rem;
+}
+
+#location-input-box .location-container #form .btn-section .close:hover{
+  background: rgb(160, 158, 158);
+  color: #000;
+}
+
+#location-input-box .location-container #form .btn-section .save{
+  background: var(--blue-color);
+  color: #fff;
+}
+
+#location-input-box .location-container #form .btn-section .save:hover{
+  background: rgb(3, 127, 199);
+  color: #fff;
+}
