@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Validation Form wih RegEx</title>
+</head>
+<body>
+  <!-- user-form -->
+  <h1>User Form</h1>
+  <form id="form">
+    <div class="form-section">
+      <label for="username">Username</label>
+      <input type="text" name="username" class="username" placeholder="Username">
+      <div class="invalid-feedback invalid-name">Name must be between 2 and 10 characters</div>
+    </div>
+    <div class="form-section">
+      <label for="zipcode">Zipcode</label>
+      <input type="text" name="zipcode" class="zipcode" placeholder="Zipcode">
+      <div class="invalid-feedback invalid-zip">Enter a valid zipcode</div>
+    </div>
+    <div class="form-section">
+      <label for="email">Email</label>
+      <input type="text" name="email" class="email" placeholder="Email">
+      <div class="invalid-feedback invalid-email">Enter a valid email</div>
+    </div>
+    <div class="form-section">
+      <label for="phone-number">Phone Number</label>
+      <input type="text" name="phone-number" class="phonenumber" placeholder="Phone Number">
+      <div class="invalid-feedback invalid-phone">Enter a valid phone number</div>
+    </div>
+    <div class="form-section">
+      <div class="btn">Submit</div>
+    </div>
+  </form>
+
+
+  <script src="app.js"></script>
+</body>
+</html>
